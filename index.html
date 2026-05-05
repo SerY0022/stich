@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="uz"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PROMPT ARCHITECT | AI Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#e5e2e3",
+                        "surface-container-highest": "#353436",
+                        "on-tertiary-fixed": "#002203",
+                        "surface-container": "#201f20",
+                        "surface-container-high": "#2a2a2b",
+                        "outline": "#849495",
+                        "secondary": "#ebb2ff",
+                        "inverse-on-surface": "#313031",
+                        "primary-container": "#00f0ff",
+                        "surface-tint": "#00dbe9",
+                        "inverse-primary": "#006970",
+                        "on-surface-variant": "#b9cacb",
+                        "on-primary-container": "#006970",
+                        "on-error": "#690005",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#00fb40",
+                        "surface-variant": "#353436",
+                        "surface-container-low": "#1c1b1c",
+                        "on-background": "#e5e2e3",
+                        "error-container": "#93000a",
+                        "surface-container-lowest": "#0e0e0f",
+                        "primary": "#dbfcff",
+                        "inverse-surface": "#e5e2e3",
+                        "on-tertiary": "#003907",
+                        "on-secondary-fixed-variant": "#74009f",
+                        "on-secondary": "#520072",
+                        "on-tertiary-container": "#006e16",
+                        "secondary-container": "#b600f8",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#00363a",
+                        "on-primary-fixed": "#002022",
+                        "on-primary-fixed-variant": "#004f54",
+                        "on-tertiary-fixed-variant": "#00530e",
+                        "surface": "#131314",
+                        "primary-fixed": "#7df4ff",
+                        "secondary-fixed-dim": "#ebb2ff",
+                        "secondary-fixed": "#f8d8ff",
+                        "tertiary-fixed-dim": "#00e639",
+                        "surface-bright": "#3a393a",
+                        "outline-variant": "#3b494b",
+                        "on-secondary-fixed": "#320047",
+                        "primary-fixed-dim": "#00dbe9",
+                        "on-secondary-container": "#fff6fc",
+                        "surface-dim": "#131314",
+                        "tertiary-fixed": "#72ff70",
+                        "tertiary": "#ddffd3",
+                        "background": "#131314"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "section-gap": "8rem",
+                        "stack-md": "1.5rem",
+                        "gutter": "2rem",
+                        "container-max": "1440px",
+                        "stack-sm": "0.5rem",
+                        "edge-margin": "4rem"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-xl": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #131314;
+            color: #e5e2e3;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-glow {
+            text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+        }
+    </style>
+</head>
+<body class="font-body-md bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-black/60 backdrop-blur-xl shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center h-20 px-8 max-w-[1440px] mx-auto">
+<div class="text-xl font-black tracking-tighter text-white">PROMPT ARCHITECT</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-bold text-cyan-400 border-b border-cyan-400 pb-1" href="#gallery">Gallery</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-bold text-white/60 hover:text-white transition-colors" href="#process">Process</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-bold text-white/60 hover:text-white transition-colors" href="#about">About</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-widest text-xs font-bold text-white/60 hover:text-white transition-colors" href="#connect">Connect</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-['Space_Grotesk'] uppercase tracking-widest text-xs font-bold hover:shadow-[0_0_15px_rgba(0,240,255,0.4)] transition-all duration-300 scale-95 active:scale-90">
+                Hire Me
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black z-10"></div>
+<img alt="Hero Background" class="w-full h-full object-cover" data-alt="A mesmerizing abstract digital landscape featuring flowing waves of liquid chrome and cyan energy pulses against a deep void. The lighting is dramatic and cinematic, with sharp highlights and soft neon glows that create a futuristic atmosphere of technological mastery and creative evolution. The composition is expansive, suggesting the infinite possibilities of AI-driven artistic architecture in a dark, minimalist digital realm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7v5eyfYcJf0t_1kFvf73coEPHJrMuvbswgvJoFLZ5H5VPFvzFisJ-lx-8c2eW1HpP-zgf6XuUinpN6eQEDEZW26DI7sI9vqlkcmKyO9moxeToGKREOduxOrIPQrSEm7lIztnu9gb0g4U7SAUB-wUuv5UcouzKP30RoQi-LrAdR1fGrATzzrOaLViy4Hfb2fQQo6h-k465KcO1I-nHg2x_uPEg4-6iF2Rd3QXM0Z8BLLD97cdFzb4BuDVVgDHV9PZjhvK-LxvcobQ"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-5xl mx-auto">
+<span class="font-label-caps text-primary-container mb-6 block tracking-[0.4em] uppercase">Raqamli San'at Kelajagi</span>
+<h1 class="font-display-xl text-white mb-8 leading-none">PROMPT <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-secondary">ARCHITECT</span></h1>
+<p class="font-body-lg text-white/70 max-w-2xl mx-auto mb-12">
+                    Sun'iy intellekt va inson tasavvuri chorrahasida yangi olamlarni barpo etamiz. Har bir piksel - bu algoritm va tuyg'u uyg'unligi.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 justify-center">
+<a class="px-10 py-4 bg-primary-container text-black font-headline-md text-sm font-bold uppercase tracking-widest hover:shadow-[0_0_25px_rgba(0,240,255,0.6)] transition-all" href="#gallery">
+                        Galleryani ko'rish
+                    </a>
+<a class="px-10 py-4 border border-primary-container text-primary-container font-headline-md text-sm font-bold uppercase tracking-widest hover:bg-primary-container/10 transition-all" href="#connect">
+                        Bog'lanish
+                    </a>
+</div>
+</div>
+</section>
+<!-- About Section (O'zim haqimda) -->
+<section class="py-section-gap px-edge-margin max-w-[1440px] mx-auto" id="about">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+<div class="glass-card aspect-[4/5] overflow-hidden">
+<img alt="Artist Portrait" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="A portrait of a futuristic visionary surrounded by holographic interfaces and ethereal light strands. The artist is depicted in a high-tech studio environment with deep charcoal textures and sharp cyan highlights reflecting off sleek surfaces. The mood is contemplative and intellectual, capturing the essence of the intersection between human intuition and machine intelligence in a professional AI creative workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs1tPMX8nWETP7dbUCQ1WJeAhUc08IBC_YkX9MbZAiJPvX68RSElYtVJgK6qBPQX7WAY_cugNCPfCquI-ZW82UobfKFsVTAzwVtQnl4HlZk21OkwUS7mhs636Z06fu6LT5AsPDOE7RgUU-mKNbUyJNPQi86ijOOcudwk0e4J7MJ0ILGLf1nBAbHhMEhcv0dgbofMiTrGsAFROeEhldp7u2QCBOAkAULgZIj_vwU_hU104A9k44oDLD4QRloABTE4PZgB_PSSPQCEc"/>
+</div>
+</div>
+<div>
+<h2 class="font-headline-lg text-white mb-8 uppercase tracking-tighter">O'ZIM HAQIMDA</h2>
+<div class="space-y-6 text-on-surface/80 font-body-lg">
+<p>
+                            Men "Prompt Architect" sifatida raqamli san'atning yangi bosqichini tadqiq qilaman. Mening ishim faqat buyruqlar yozish emas, balki sun'iy intellektning cheksiz imkoniyatlarini insoniy hissiyotlar bilan bog'lashdir.
+                        </p>
+<p>
+                            Har bir loyiha - bu murakkab iteratsiyalar natijasi. Biz algoritmga yo'nalish beramiz, u esa bizga kutilmagan go'zallikni taqdim etadi. Bu hamkorlik san'atning yangi tilidir.
+                        </p>
+<div class="pt-8 grid grid-cols-2 gap-8">
+<div>
+<div class="text-primary-container font-display-xl text-4xl mb-2">500+</div>
+<div class="font-label-caps text-xs opacity-60 uppercase">Noyob promptlar</div>
+</div>
+<div>
+<div class="text-secondary font-display-xl text-4xl mb-2">50+</div>
+<div class="font-label-caps text-xs opacity-60 uppercase">Xalqaro loyihalar</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section (Mening Ijodim) -->
+<section class="py-section-gap px-edge-margin bg-surface-container-lowest/50" id="gallery">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline-lg text-white mb-4 uppercase tracking-tighter">MENING IJODIM</h2>
+<p class="font-body-md text-white/50">AI tomonidan yaratilgan eng sara asarlar to'plami</p>
+</div>
+<div class="hidden md:flex gap-4">
+<span class="px-4 py-2 bg-surface-container border border-white/10 text-xs font-bold uppercase text-primary-container">Barchasi</span>
+<span class="px-4 py-2 hover:bg-surface-container border border-transparent hover:border-white/10 text-xs font-bold uppercase text-white/40 cursor-pointer transition-all">Abstract</span>
+<span class="px-4 py-2 hover:bg-surface-container border border-transparent hover:border-white/10 text-xs font-bold uppercase text-white/40 cursor-pointer transition-all">Portrait</span>
+</div>
+</div>
+<!-- Masonry-like Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Gallery Item 1 -->
+<div class="group relative overflow-hidden glass-card aspect-square">
+<img alt="AI Art 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A detailed AI-generated artwork showcasing a bio-mechanical life form emerging from a crystalline structure. The color palette consists of deep violets and electric cyans, with intricate patterns and fractal geometries. Lighting is focused and sharp, highlighting the translucent textures and metallic surfaces in a dark, high-contrast digital environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyNBqveCrGHJrZxIwbwCYleOajCTNZ8gOoW9Xne9NXPcmBoRvyjdjUUdtWgFdkG4MllFjwfaQKHKbIydYq8ubQAumJV_V8_sk82U3uhOc_xM0kuWkRt5hM4xSMZv4wPNAxei_t6O7-X7nW7MMkE9L1mDi7rihA1lr6tZ7uEs6ZLUmw7TkdsfLZxzlGQkUtIWL13cQJE4bQn72_XS5nroOqW6V-9iFu78JdvodKb4EVBx1-NySEuUCTbrY8za-iSRkVKxMG5fL6ES4"/>
+<div class="absolute inset-0 bg-black/80 flex flex-col justify-end p-8 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-primary-container font-label-caps mb-2">Midjourney V6</span>
+<h3 class="text-xl font-bold mb-4">Kiber-Organika</h3>
+<p class="text-sm text-white/70 mb-6 italic font-light">"Neon flora with metallic textures, hyper-realistic, 8k, cinematic lighting..."</p>
+<button class="w-fit text-xs font-bold uppercase tracking-widest flex items-center gap-2 text-white border-b border-white/30 pb-1">Batafsil <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="group relative overflow-hidden glass-card aspect-[3/4] lg:row-span-2">
+<img alt="AI Art 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A vertical composition featuring a surreal architecture made of floating liquid gold and obsidian pillars. The scene is illuminated by an artificial star, casting sharp, long shadows and creating intense reflections. The aesthetic is one of futuristic prestige and impossible geometry, rendered in a dark-mode palette with warm gold accents and deep black backgrounds." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa3m_HSlDBNOZIgfvRD5FUL_1OM1b-GUMSSLacnGIzl_2jdnDswsRZFNEA-IoCXKBIxCwwyg6j7CNcuyPL9RzURhtpp8Ytx6j7BFbF21rDOPW4WFXTVSQ2BwQQ2F6fjtfcTZy1k-_1O2mn8wIYpmIuKEOkoiDZfMpjksjKtcXvggg754ipcc47ErpgH4fXJhA_N8eV_5mbiRrEjE2sHjaik4ISNMoeXqKXbcMcYDaKg5a5EkysjJO6cgAI5cDswP6XsWAY8PH83ZM"/>
+<div class="absolute inset-0 bg-black/80 flex flex-col justify-end p-8 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-secondary font-label-caps mb-2">DALL-E 3</span>
+<h3 class="text-xl font-bold mb-4">Suyuq Arxitektura</h3>
+<p class="text-sm text-white/70 mb-6 italic font-light">"Impossible floating structures made of liquid metal, sharp focus, octane render..."</p>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="group relative overflow-hidden glass-card aspect-video">
+<img alt="AI Art 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A wide aspect ratio image showing a futuristic cityscape shrouded in a luminous cyan mist. Massive holographic structures tower over the dark streets, and flying vehicles leave trails of electric blue light. The atmosphere is dense and atmospheric, with a heavy emphasis on depth and light refraction through the fog, maintaining a consistent high-tech minimalist style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtXcFJpz2-XSJVWMB2RUsma1IHkCTzSUA5wfEZq7rONq0X-RcZGsA3gnebCNa6sk4mhfJAW2p1ynh-X6tOK0bvUSSB2Qq6ZvYopPXLMpqfOK3knvVU3odVQPKmp5EfOWBLL9j32fMVw5yed0ToZK8lJQRzP0RIt_8fJp5FRLbg9TTotvi76UsnUZw26nWXn6rMowPHuj_SXt2rKwttKNhQ7vMlSILmVD2ICNl2OhzFRzODVkdq0R-d_O4je80MS155Vdu9aL9loGY"/>
+<div class="absolute inset-0 bg-black/80 flex flex-col justify-end p-8 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-tertiary-fixed-dim font-label-caps mb-2">Stable Diffusion</span>
+<h3 class="text-xl font-bold mb-4">Tumanli Megapolis</h3>
+<p class="text-sm text-white/70 mb-6 italic font-light">"Cyberpunk city submerged in teal fog, volumetric lighting, epic scale..."</p>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="group relative overflow-hidden glass-card aspect-square">
+<img alt="AI Art 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A vibrant digital abstract exploring the concept of data flow and neural networks. Bright, tangled filaments of light in shades of cyan and magenta weave through a dark dimensional space. The visual style is sharp and intricate, suggesting the complexity of machine intelligence and the beauty of underlying mathematical patterns in a premium dark UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyN1lM_o171BNuRaizLZndxEmhkVwtFOmNXZ3Cs7_t82KFcLPYFkxCEXRApnC6oK1wHEj6AfdGpLfPQlWXp98eDgz3i2CE8FGkWTfZEhc1zMD9dkW0_QQOGsadTGQfob7VZKu3nWHPvQxnZbvTZS_bavid9QxeGVtV70Tbyew4VgVO6jVTtyLndJ7gIlNJzpFe78WwYSWzM2p69i_js76cWcBmes18Tn3-LbbZZLsq8BcklkoHiKbCB0z1BVxz0yX7MN5C00FrzK8"/>
+<div class="absolute inset-0 bg-black/80 flex flex-col justify-end p-8 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+<span class="text-primary-container font-label-caps mb-2">Midjourney V6</span>
+<h3 class="text-xl font-bold mb-4">Neyron To'qimasi</h3>
+<p class="text-sm text-white/70 mb-6 italic font-light">"Abstract neural network visualization, glowing fiber optics, dark background..."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Socials & Contact (Bog'lanish) -->
+<section class="py-section-gap px-edge-margin" id="connect">
+<div class="max-w-[1440px] mx-auto glass-card p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline-lg text-white mb-6 uppercase tracking-tighter">BOG'LANISH</h2>
+<p class="font-body-lg text-white/60 mb-12 max-w-md">
+                            Yangi loyihalar, hamkorlik yoki shunchaki AI san'ati haqida gaplashish uchun aloqaga chiqing.
+                        </p>
+<div class="space-y-8">
+<a class="group flex items-center gap-6 p-4 border border-white/5 hover:border-primary-container/50 transition-all bg-white/5" href="#">
+<div class="w-12 h-12 flex items-center justify-center bg-black text-white group-hover:text-primary-container transition-colors">
+<span class="material-symbols-outlined">alternate_email</span>
+</div>
+<div>
+<div class="font-label-caps text-[10px] text-white/40 uppercase">Email</div>
+<div class="font-headline-md text-sm text-white">hello@promptarchitect.uz</div>
+</div>
+</a>
+<div class="flex gap-4">
+<a class="flex-1 group flex items-center justify-center gap-3 py-6 border border-white/5 bg-white/5 hover:bg-primary-container transition-all" href="https://t.me/Koika_34/609">
+<span class="material-symbols-outlined text-white group-hover:text-black">send</span>
+<span class="font-label-caps text-white group-hover:text-black uppercase">Telegram</span>
+</a>
+<a class="flex-1 group flex items-center justify-center gap-3 py-6 border border-white/5 bg-white/5 hover:bg-secondary transition-all" href="https://www.instagram.com/">
+<span class="material-symbols-outlined text-white group-hover:text-black">camera</span>
+<span class="font-label-caps text-white group-hover:text-black uppercase">Instagram</span>
+</a>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-[10px] text-white/40 uppercase px-1">Ismingiz</label>
+<input class="w-full bg-white/5 border border-white/10 p-4 focus:border-primary-container outline-none text-white transition-all" placeholder="Aziz Rahimov" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-[10px] text-white/40 uppercase px-1">Email</label>
+<input class="w-full bg-white/5 border border-white/10 p-4 focus:border-primary-container outline-none text-white transition-all" placeholder="example@mail.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-[10px] text-white/40 uppercase px-1">Xabar matni</label>
+<textarea class="w-full bg-white/5 border border-white/10 p-4 focus:border-primary-container outline-none text-white transition-all" placeholder="Loyihangiz haqida yozing..." rows="4"></textarea>
+</div>
+<button class="w-full py-4 bg-primary-container text-black font-headline-md text-sm font-bold uppercase tracking-widest hover:shadow-[0_0_20px_rgba(0,240,255,0.4)] transition-all">
+                            Xabarni yuborish
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-white/5 bg-black">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-8 max-w-[1440px] mx-auto">
+<div class="text-lg font-bold text-white">PROMPT ARCHITECT</div>
+<div class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-white/40 text-center">
+                © 2024 PROMPT ARCHITECT. ENGINEERED BY INTELLIGENCE.
+            </div>
+<div class="flex gap-8">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-cyan-400 transition-colors duration-500 opacity-80 hover:opacity-100" href="#">Instagram</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-cyan-400 transition-colors duration-500 opacity-80 hover:opacity-100" href="#">Telegram</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-cyan-400 transition-colors duration-500 opacity-80 hover:opacity-100" href="#">ArtStation</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-white/40 hover:text-cyan-400 transition-colors duration-500 opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+<!-- FAB (Suppressed for landing unless on top) -->
+<div class="fixed bottom-8 right-8 z-40 hidden md:block">
+<a class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:scale-110 active:scale-95 transition-all text-black" href="#connect">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</a>
+</div>
+</body></html>
